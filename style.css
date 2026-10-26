@@ -1,0 +1,1282 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f7d774;
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/* تنسيق النافبار */
+.navbar {
+position: sticky;
+top: 20px;
+z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    border: 3px solid #000000;
+    border-radius: 8px;
+    padding: 12px 24px;
+    box-shadow: 4px 4px 0px #000000;
+    margin-bottom: 40px;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: 900;
+    color: #000000;
+}
+
+.logo .review {
+    color: #e54b4b;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 800;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    transition: color 0.2s ease;
+}
+
+/* تحول لون لينكات النافبار للبرتقالي عند الـ Hover */
+.nav-links a:hover {
+    color: #ff5500 !important;
+}
+
+.nav-links .separator {
+    color: #888888;
+    font-size: 11px;
+}
+
+/* زرار Subscribe Now وتأثير الحركة والظل عند الـ Hover */
+.btn-subscribe {
+    background-color: #e59344;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 13px;
+    padding: 10px 22px;
+    border: 3px solid #000000;
+    border-radius: 25px;
+    box-shadow: 3px 3px 0px #000000;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-subscribe:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 6px 6px 0px #000000 !important;
+}
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.menu-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #000;
+}
+
+/* تخطيط سكشن الهيرو والصورة جنب بعض */
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+padding-left: 60px;
+padding-right: 60px;
+box-sizing: border-box;
+padding-bottom: 80px;
+box-sizing: border-box;
+position: relative;
+}
+
+
+
+.hero-content {
+    flex: 1;
+    max-width: 550px;
+
+}
+
+.trending-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 8px 16px;
+    font-size: 13px;
+    font-weight: 900;
+    border: 2px solid #000000;
+    border-radius: 4px;
+    box-shadow: 3px 3px 0px #000000;
+    margin-bottom: 25px;
+    transform: rotate(-2deg);
+}
+
+.hero-title {
+    font-size: 58px;
+    font-weight: 900;
+    line-height: 1.05;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+padding-left: 50px;
+padding-right: 50px;
+}
+
+.text-black {
+    color: #111111;
+    text-shadow: 4px 4px 0px #000000;
+}
+
+.text-red {
+    color: #e54b4b;
+    text-shadow: 4px 4px 0px #000000;
+}
+
+.text-blue {
+    color: #4da6ff;
+    text-shadow: 4px 4px 0px #000000;
+}
+
+.hero-description {
+    background-color: #ffffff;
+    border: 3px solid #000000;
+    border-radius: 4px;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #222222;
+    box-shadow: 4px 4px 0px #000000;
+    margin-bottom: 30px;
+    line-height: 1.4;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+/* تنسيق وحركة الأزرار السفلية عند الـ Hover */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    font-size: 14px;
+    font-weight: 900;
+    text-decoration: none;
+    border: 3px solid #000000;
+    border-radius: 4px;
+    box-shadow: 4px 4px 0px #000000;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-dark {
+    background-color: #213547;
+    color: #ffffff;
+}
+
+.btn-light {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.btn:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 7px 7px 0px #000000 !important;
+}
+
+/* تنسيق حاوية الصورة الجانبية وزاوية الـ Hover */
+.hero-image-wrapper {
+    position: relative;
+    flex: 1;
+    max-width: 550px;
+}
+
+.featured-badge {
+    position: absolute;
+    top: -12px;
+    right: -10px;
+    background-color: #e54b4b;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 900;
+    padding: 6px 16px;
+    border: 3px solid #000000;
+    border-radius: 4px;
+    box-shadow: 3px 3px 0px #000000;
+    transform: rotate(5deg);
+    z-index: 2;
+}
+
+.image-box {
+    width: 100%;
+    max-width: 500px;
+    height: 350px;
+    border: 4px solid #000000;
+    border-radius: 4px;
+    box-shadow: 6px 6px 0px #000000;
+    background-color: #ffffff;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    transform: rotate(1.5deg);
+}
+
+.image-box:hover {
+    transform: translate(-5px, -5px);
+    box-shadow: 11px 11px 0px #000000;
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+/* ==========================================
+   تخطيط وتنسيقات السكشن الجديد (المقالات + الـ Sidebar)
+   ========================================== */
+.white-section-wrapper{
+background-color: #ffffff;
+width: 100%;
+padding: 60px 40px;
+margin-top: 50px;
+box-sizing: border-box;
+position: relative;
+}
+.main-articles-layout {
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: 35px;
+    align-items: start;
+    margin: 0 auto;
+    max-width: 1200;
+}
+
+/* سكشن المقالات */
+.articles-list-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.articles-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.articles-title {
+    font-size: 32px;
+    font-weight: 900;
+    color: #000000;
+    letter-spacing: -0.5px;
+}
+
+.fresh-badge {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 800;
+    padding: 6px 14px;
+    border: 3px solid #000000;
+    border-radius: 4px;
+    box-shadow: 3px 3px 0px #000000;
+}
+
+/* تصميم كروت المقالات */
+.article-card {
+    background-color: #ffffff;
+    border: 3px solid #000000;
+    border-radius: 4px;
+    padding: 24px;
+    box-shadow: 6px 6px 0px #000000;
+    display: flex;
+    gap: 25px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* حركة الكارت للأعلى مع الظل عند الوقوف عليه بالماوس */
+.article-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 8px 10px 0px #000000;
+}
+
+/* تغيير لون العنوان الكبير عند الوقوف على الكارت نفسه بحسب الترتيب */
+.article-card:nth-of-type(1):hover .card-title {
+    color: #e54b4b; /* أحمر */
+}
+
+.article-card:nth-of-type(2):hover .card-title {
+    color: #4da6ff; /* أزرق */
+}
+
+.article-card:nth-of-type(3):hover .card-title {
+    color: #8c7ae6; /* بنفسجي */
+}
+
+/* تصميم حاوية الصورة والبادج المائل */
+.card-image-box {
+    position: relative;
+    width: 230px;
+    height: 155px;
+    flex-shrink: 0;
+    border: 3px solid #000000;
+    border-radius: 2px;
+    overflow: visible;
+}
+
+.card-image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* البادج المائل بزاوية أعلى الصورة */
+.badge {
+    position: absolute;
+    top: -12px;
+    right: -12px;
+    padding: 4px 10px;
+    font-size: 11px;
+    font-weight: 900;
+    color: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 3px;
+    box-shadow: 2px 2px 0px #000000;
+    z-index: 2;
+}
+
+.badge-new {
+    background-color: #e54b4b;
+    transform: rotate(12deg);
+}
+
+.badge-hot {
+    background-color: #4da6ff;
+    transform: rotate(-10deg);
+}
+
+.badge-viral {
+    background-color: #8c7ae6;
+    transform: rotate(10deg);
+}
+
+/* محتوى الكارت النصي */
+.card-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.category-tag {
+    align-self: flex-start;
+    padding: 3px 10px;
+    font-size: 11px;
+    font-weight: 900;
+    border: 2px solid #000000;
+    border-radius: 3px;
+    box-shadow: 2px 2px 0px #000000;
+    margin-bottom: 6px;
+}
+
+.tag-tech { background-color: #fbc531; }
+.tag-design { background-color: #4cd137; }
+.tag-culture { background-color: #ff9ff3; }
+
+.card-title {
+    font-size: 22px;
+    font-weight: 900;
+    color: #000000;
+    margin-bottom: 6px;
+    transition: color 0.2s ease;
+}
+
+.card-description {
+    font-size: 14px;
+    color: #333333;
+    line-height: 1.5;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.card-footer-meta {
+    font-size: 11px;
+    color: #222222;
+    display: flex;
+    gap: 15px;
+    font-weight: 800;
+}
+
+/* زرار LOAD MORE ARTICLES */
+.load-more-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.btn-load-more {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    border: 3px solid #000000;
+    border-radius: 4px;
+    padding: 14px 40px;
+    font-weight: 900;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 4px 4px 0px #000000;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.btn-load-more:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0px #000000;
+}
+
+.btn-load-more:active {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0px #000000;
+}
+
+/* القائمة الجانبية Sticky (سواء تم استخدام aside أو div ستعمل بهذا التنسيق تماماً) */
+.articles-sidebar {
+    position: relative;
+    height: 100%;
+}
+
+.sidebar-sticky-content {
+    position: sticky;
+    top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.sidebar-card-box {
+    background-color: #ffffff;
+    border: 3px solid #000000;
+    border-radius: 4px;
+    padding: 20px;
+    box-shadow: 5px 5px 0px #000000;
+}
+
+.sidebar-heading {
+    font-size: 20px;
+    font-weight: 900;
+    color: #000000;
+    margin-bottom: 18px;
+    letter-spacing: -0.3px;
+}
+
+/* قائمة Trending Now وتغيير ألوان العناوين عند الهوفر */
+.trending-items-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.trending-single-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.trending-number {
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.num-1 { color: #e54b4b; }
+.num-2 { color: #4da6ff; }
+.num-3 { color: #8c7ae6; }
+
+.trending-text-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.trending-item-title {
+    text-decoration: none;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 900;
+    transition: color 0.2s ease;
+}
+
+.link-1:hover { color: #e54b4b; }
+.link-2:hover { color: #4da6ff; }
+.link-3:hover { color: #8c7ae6; }
+
+.trending-item-meta {
+    font-size: 11px;
+    color: #666666;
+    font-weight: 700;
+}
+
+/* قائمة Categories والتنقل من الفاتح للغامق مع الخروج للخارج */
+.categories-buttons-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.category-btn {
+    display: block;
+    padding: 10px 14px;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 13px;
+    color: #000000;
+    border: 2px solid #000000;
+    border-radius: 4px;
+    transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* الألوان الفاتحة (شفافة/باهتة) في الحالة العادية */
+.btn-cat-tech { background-color: rgba(251, 197, 49, 0.35); }
+.btn-cat-design { background-color: rgba(76, 209, 55, 0.35); }
+.btn-cat-culture { background-color: rgba(255, 159, 243, 0.35); }
+.btn-cat-opinion { background-color: rgba(77, 166, 255, 0.35); }
+.btn-cat-tutorials { background-color: rgba(140, 122, 230, 0.35); }
+
+/* التحول لللون الغامق الثقيل والبروز للخارج عند الهوفر */
+.btn-cat-tech:hover {
+    background-color: #fbc531;
+    transform: translateX(6px);
+    box-shadow: 3px 3px 0px #000000;
+}
+
+.btn-cat-design:hover {
+    background-color: #4cd137;
+    transform: translateX(6px);
+    box-shadow: 3px 3px 0px #000000;
+}
+
+.btn-cat-culture:hover {
+    background-color: #ff9ff3;
+    transform: translateX(6px);
+    box-shadow: 3px 3px 0px #000000;
+}
+
+.btn-cat-opinion:hover {
+    background-color: #4da6ff;
+    transform: translateX(6px);
+    box-shadow: 3px 3px 0px #000000;
+}
+
+.btn-cat-tutorials:hover {
+    background-color: #8c7ae6;
+    transform: translateX(6px);
+    box-shadow: 3px 3px 0px #000000;
+}
+/* تنسيق سكشن المؤلفين بالكامل والخلفية الصفراء العامة */
+.authors-section {
+    background-color: #f7d774;
+    padding: 60px 40px;
+    border-bottom: 4px solid #000000;
+    box-sizing: border-box;
+    border-top:4px solid #000 ;
+    position: relative;
+}
+
+
+
+
+
+
+
+.authors-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.authors-header h2 {
+    font-size: 36px;
+    font-weight: 900;
+    color: #000000;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.authors-header p {
+    font-size: 16px;
+    color: #333333;
+    font-weight: 500;
+}
+
+/* توزيع الكروت بجانب بعضها البعض */
+.authors-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* تصميم الكارت الواحد (إطار أسود سميك، بوردير راديوس خفيف أو حاد حسب التصميم، وشادو حاد ريترو) */
+.author-card {
+    background-color: #ffffff;
+    border: 3px solid #000000;
+    width: 330px;
+    padding: 30px 25px;
+    box-sizing: border-box;
+    position: relative;
+    box-shadow: 4px 4px 0px #000000;
+    transition: transform 0.3s ease;
+}
+
+/* ألوان خلفيات البطاقات المختلفة من الداخل */
+.card-yellow { background-color: #fceea7; }
+.card-cyan { background-color: #d1f2eb; }
+.card-pink { background-color: #fadbd8; }
+
+/* شارة الركن العلوي (Founder / Lead / Viral) */
+.author-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 800;
+    padding: 4px 10px;
+    transform: rotate(5deg);
+    border: 2px solid #000000;
+    box-shadow: 2px 2px 0px #000000;
+}
+.author-badge.founder { background-color: #e74c3c; }
+.author-badge.lead { background-color: #3498db; }
+.author-badge.viral { background-color: #9b59b6; }
+
+/* صندوق الصورة مع تأثير الهوفر (الصورة تتحرك وتكبر قليلاً وتغير لون الاسم) */
+.author-img-box {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 20px auto;
+    border: 3px solid #000000;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 3px 3px 0px #000000;
+}
+
+.author-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+/* عند الوقوف بالماوس على الكارت أو الصورة: تتحرك الصورة ويتغير لون الاسم */
+.author-card:hover .author-img-box img {
+    transform: scale(1.08);
+}
+
+/* أسماء المؤلفين ووصفهم */
+.author-name {
+    font-size: 22px;
+    font-weight: 900;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 8px;
+    transition: color 0.3s ease;
+}
+
+/* تخصيص لون الهوفر للاسم لكل شخصية مطابقة لطلبك */
+.card-yellow:hover .author-name { color: #e74c3c; /* أحمر */ }
+.card-cyan:hover .author-name { color: #3498db; /* أزرق */ }
+.card-pink:hover .author-name { color: #9b59b6; /* بنفسجي */ }
+
+.author-role {
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
+    color: #333333;
+    margin-bottom: 15px;
+}
+
+.author-desc {
+    font-size: 13px;
+    line-height: 1.5;
+    text-align: center;
+    color: #444444;
+    margin-bottom: 25px;
+}
+
+/* تنسيق أيقونات السوشيال ميديا في أسفل الكارت */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.social-icon {
+width: 36px;
+height: 36px;
+background-color: #000;
+display: flex;
+align-items: center;
+justify-content: center;
+text-decoration: none;
+border:2px solid #000;
+transition: all 0.25s ease;
+overflow: hidden;
+}
+.social-icon img{
+width: 18px;
+height: 18px;
+object-fit: contain;
+}
+
+
+
+/* تأثير الهوفر للأيقونات: تخرج للأعلى واليمين وتكتسب بكسل شادو من الأسفل واليمين مع ألوان التطبيقات المطلوبة */
+.social-icon:hover {
+    transform: translateY(-3px) translateX(3px);
+    box-shadow: -3px 3px 0px #000000;
+}
+
+/* ألوان الهوفر الخاصة بكل منصة (تويتر أزرق فاتح، لينكدإن أزرق غامق، إنستجرام بنفسجي) */
+.social-icon.twitter:hover {
+    background-color: #1da1f2;
+    color: #ffffff;
+}
+
+.social-icon.linkedin:hover {
+    background-color: #0a66c2;
+    color: #ffffff;
+}
+
+.social-icon.instagram:hover {
+    background-color: #c13584;
+    color: #ffffff;
+}
+.author-card:hover{
+transform: translateY(-5px);
+box-shadow: 6px 6px 0px #000;
+}
+.authors-header p::after{
+    content: "";
+display: block;
+width: 80px;
+height: 4px;
+background-color: #000;
+margin: 15px auto 0 auto;
+border: 1px solid #000;
+}
+
+
+
+
+/* عمل خط علوي للسكشن باستخدام Pseudo-element */
+.authors-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #000000;
+}
+/* تنسيق سكشن Join the Rebellion بالكامل والخلفية الصفراء */
+.rebellion-section {
+    background-color: #ffffff;
+    padding: 70px 40px;
+    border-bottom: 5px solid #000000;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.rebellion-header {
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.rebellion-header h2 {
+    font-size: 36px;
+    font-weight: 900;
+    color: #000000;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.rebellion-header p {
+    font-size: 16px;
+    color: #333333;
+    font-weight: 500;
+}
+
+/* الخط الفاصل تحت العنوان تلقائياً */
+.rebellion-header p::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #000000;
+    margin: 15px auto 0 auto;
+    border: 1px solid #000000;
+}
+
+/* توزيع محتويات السكشن (جزئين يمين ويسار) */
+.rebellion-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.rebellion-left,  .rebellion-right {
+    flex: 1;
+    min-width: 330px;
+}
+
+/* عناوين الأقسام الفرعية */
+.rebellion-left h3 {
+    font-size: 22px;
+    font-weight: 900;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+/* الصندوق النصي الإطاري */
+.feature-box {
+    background-color: #ffffff;
+    border: 3px solid #000000;
+    padding: 25px;
+    box-shadow: 4px 4px 0px #000000;
+    margin-bottom: 25px;
+}
+
+.feature-box p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #222222;
+    font-weight: 500;
+}
+
+/* قائمة المميزات (الخطوط المربعة والأيقونات الملونة) */
+.feature-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.feature-list li {
+    background-color: transparent;
+    border: none;
+    padding: 8px 0px;
+    margin-bottom: 10px;
+    font-size: 13px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+}
+
+.check-icon {
+    width: 24px;
+    height: 24px;
+    border: 2px solid #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.check-icon img {
+    width: 12px;
+    height: 12px;
+    object-fit: contain;
+}
+
+/* ألوان خلفيات الأيقونات الصغيرة في القائمة */
+.red-bg { background-color: #e74c3c; }
+.blue-bg { background-color: #3498db; }
+.purple-bg { background-color: #9b59b6; }
+.green-bg { background-color: #2ecc71; }
+
+/* زرار انضم الآن الأساسي (مع البوكس شادو البارز وتأثير الهوفر المطلوب) */
+.join-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #222222;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 900;
+    padding: 16px 30px;
+    text-decoration: none;
+    border: 3px solid #000000;
+    box-shadow: 6px 6px 0px #000000; /* شادو قوي وبارز */
+    transition: all 0.25s ease;
+}
+
+.btn-icon {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+}
+
+/* تأثير الهوفر للزرار: يعود لمكانه الأصلي ويخف الشادو تماماً زي ما طلبتي */
+.join-btn:hover {
+    transform: translateY(4px) translateX(4px);
+    box-shadow: 2px 2px 0px #000000;
+    background-color: #000000;
+}
+
+/* كروت الآراء (What Rebels Are Saying) */
+.testimonial-card {
+    background-color: #ffffff;
+    border: 3px solid #000000;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 4px 4px 0px #000000;
+}
+
+.testimonial-card p {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #333333;
+    margin-bottom: 15px;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.testimonials-wrapper {
+    background-color: #ffffff;
+    border: 3px solid #000000;
+    padding: 30px;
+    box-shadow: 6px 6px 0px #000000;
+}
+
+.testimonials-wrapper > h3 {
+    font-size: 24px;
+    font-weight: 900;
+    color: #000000;
+    margin-bottom: 25px;
+    letter-spacing: 0.5px;
+}
+
+/* الكروت الداخلية جوه المربع الكبير اليمين */
+.testimonials-wrapper .testimonial-card {
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    padding: 18px;
+    margin-bottom: 20px;
+    box-shadow: none;
+}
+
+.testimonials-wrapper .testimonial-card:last-child {
+    margin-bottom: 0;
+}
+
+.testimonials-wrapper .testimonial-card p {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #333333;
+    margin-bottom: 12px;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.testimonials-wrapper .author-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-top: 1px dashed #cccccc;
+    padding-top: 10px;
+}
+
+.testimonials-wrapper .author-info img {
+    width: 38px;
+    height: 38px;
+    border: 2px solid #000000;
+    object-fit: cover;
+}
+
+.testimonials-wrapper .author-info h4 {
+    font-size: 13px;
+    font-weight: 900;
+    color: #000000;
+    margin: 0;
+}
+
+.testimonials-wrapper .author-info p {
+    font-size: 11px;
+    color: #666666;
+    margin: 0;
+    font-style: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+.author-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-top: 2px dashed #cccccc;
+    padding-top: 12px;
+}
+
+.author-info img {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #000000;
+    object-fit: cover;
+}
+
+.author-info h4 {
+    font-size: 14px;
+    font-weight: 900;
+    color: #000000;
+    margin: 0;
+}
+
+.author-info p {
+    font-size: 11px;
+    color: #666666;
+    margin: 0;
+    font-style: normal;
+}
+/* ==========================================
+   تنسيق الفوتر بالكامل (The Footer Section)
+   ========================================== */
+
+.site-footer {
+    background-color: #171717; /* خلفية داكنة للفوتر */
+    color: #ffffff;
+    padding: 60px 40px 30px 40px;
+    border-top: 5px solid #000000;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #333333; /* خط فاصل خفيف بين الأقسام والحقوق */
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 260px;
+}
+
+/* العمود الأول: اللوجو والنص */
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.footer-logo img {
+    width: 36px;
+height: 36;
+object-fit: contain;
+background-color: #ffffff;
+padding: 8px;
+box-sizing: ;
+}
+
+.footer-logo h2 {
+    font-size: 24px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    color: #ffffff;
+    margin: 0;
+}
+
+.brand-col p {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 1.6;
+    max-width: 340px;
+    font-weight: 500;
+}
+
+/* العمود الثاني: العناوين والتصنيفات */
+.footer-col h3 {
+    font-size: 18px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.links-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.links-col li {
+    margin-bottom: 12px;
+}
+
+.links-col a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    transition: color 0.2s ease;
+}
+
+/* هوفر التصنيفات: يتحول للأصفر عند الوقوف عليه */
+.links-col a:hover {
+    color: #f7d774;
+}
+
+/* العمود الثالث: النيوزليتر والحقول */
+.newsletter-col p {
+    color: #a3a3a3;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.email-input {
+    width: 100%;
+    background-color: transparent;
+    border: 2px solid #525252;
+    padding: 18px 16px;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    outline: none;
+    box-sizing: border-box;
+    
+}
+
+.email-input::placeholder {
+    color: #737373;
+    font-weight: 700;
+}
+
+.email-input:focus {
+    border-color: #f7d774; /* إطار أصفر عند الكتابة */
+}
+
+/* زر السابسكرايب */
+.subscribe-btn {
+    width: 100%;
+    background-color: #f7d774; /* أصفر فاتح أساسي */
+    color: #000000;
+    border: 2px solid #000000;
+    padding: 14px;
+    font-size: 14px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: 4px 4px 0px #000000;
+    transition: all 0.2s ease;
+}
+
+/* هوفر زر السابسكرايب: بينزل لتحت سنة ولونه بيبقى أصفر غامق */
+.subscribe-btn:hover {
+    background-color: #e5b838; /* لون أصفر أغمق سنه */
+    transform: translateY(3px) translateX(3px); /* حركة الانزلاق لتحت كأنه بيتضغط */
+    box-shadow: 1px 1px 0px #000000; /* انكماش الظل */
+}
+
+/* الشريط السفلي للحقوق والروابط Legal */
+.footer-bottom {
+    max-width: 1200px;
+    margin: 30px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.copyright {
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin: 0;
+}
+
+.legal-links {
+    display: flex;
+    gap: 20px;
+}
+
+.legal-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    transition: color 0.2s ease;
+}
+
+/* هوفر روابط الخصوصية والشروط: يتحول للأصفر */
+.legal-links a:hover {
+    color: #f7d774;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

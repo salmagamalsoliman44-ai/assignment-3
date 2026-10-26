@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The UX Review</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- الناف بار و روابط الشاشات الكبيرة -->
+    <header class="navbar">
+        <div class="logo">
+            The UX <span class="review">Review</span>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#">HOME</a></li>
+            <li class="separator">★</li>
+            <li><a href="#">LATEST ARTICLES</a></li>
+            <li class="separator">★</li>
+            <li><a href="#">AUTHORS</a></li>
+            <li class="separator">★</li>
+            <li><a href="#">COMMUNITY</a></li>
+        </ul>
+
+        <a href="#" class="btn-subscribe">SUBSCRIBE NOW</a>
+
+        <!-- ايقون المنيو للشاشات الصغيرة -->
+        <div class="menu-icon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+
+    <!-- السكشن الرئيسي (الهيرو) -->
+    <main class="hero-section">
+        <div class="hero-content">
+            <div class="trending-badge">
+                🔥 TRENDING NOW
+            </div>
+
+            <h1 class="hero-title">
+                <span class="text-black">BRUTAL</span><br>
+                <span class="text-red">THOUGHTS</span><br>
+                <span class="text-blue">BOLD IDEAS</span>
+            </h1>
+
+            <div class="hero-description">
+                Raw, unfiltered content about tech, design, and culture. No sugar-coating, just pure truth that hits different.
+            </div>
+
+            <div class="hero-buttons">
+                <a href="#" class="btn btn-dark">
+                    🚀 START READING
+                </a>
+                <a href="#" class="btn btn-light">
+                    ▶ WATCH INTRO
+                </a>
+            </div>
+        </div>
+
+        <!-- الصورة الجانبية مع شارة FEATURED -->
+        <div class="hero-image-wrapper">
+            <div class="featured-badge">FEATURED</div>
+            <div class="image-box">
+                <img src="images/hero-img.png" alt="Featured Art">
+            </div>
+        </div>
+         
+    </main>
+  
+    <!-- بداية سكشن المقالات والقائمة الجانبية المكمل --> 
+     
+    <div class="white-section-wrapper">
+     <main class="main-articles-layout">
+    
+    <!--- سكشن المقالات الرئيسية -->
+    <section class="articles-list-container">
+        <div class="articles-header">
+            <h2 class="articles-title">LATEST ARTICLES</h2>
+            <div class="fresh-badge">
+                <span class="fire-icon">🔥</span> FRESH CONTENT
+            </div>
+        </div>
+
+        <!-- الكارت الأول (أحمر عند الهوفر) -->
+        <article class="article-card">
+            <div class="card-image-box">
+                <img src="images/user-engagement-2 - Copy.jpg" alt="Why Your Website Needs More Edge">
+                <div class="badge badge-new">NEW</div>
+            </div>
+            <div class="card-details">
+                <span class="category-tag tag-tech">TECH</span>
+                <h3 class="card-title">Why Your Website Needs More Edge</h3>
+                <p class="card-description">Exploring the psychological impact of bold, unapologetic design choices on user engagement and brand perception in the digital age.</p>
+                <div class="card-footer-meta">
+                    <span>👤 BY ALEX BRUTAL</span>
+                    <span>📅 JAN 8, 2025</span>
+                    <span>⏱️ 5 MIN READ</span>
+                    <span>❤️ 127</span>
+                </div>
+            </div>
+        </article>
+
+        <!-- الكارت الثاني (أزرق عند الهوفر) -->
+        <article class="article-card">
+            <div class="card-image-box">
+                <img src="images/guide-to-typography.avif" alt="Typography That Screams">
+                <div class="badge badge-hot">HOT</div>
+            </div>
+            <div class="card-details">
+                <span class="category-tag tag-design">DESIGN</span>
+                <h3 class="card-title">Typography That Screams</h3>
+                <p class="card-description">How to choose and implement bold typography that commands attention without sacrificing readability or user experience.</p>
+                <div class="card-footer-meta">
+                    <span>👤 BY Arnold Reeve</span>
+                    <span>📅 JAN 6, 2025</span>
+                    <span>⏱️ 7 MIN READ</span>
+                    <span>❤️ 89</span>
+                </div>
+            </div>
+        </article>
+
+        <!-- الكارت الثالث (بنفسجي عند الهوفر) -->
+        <article class="article-card">
+            <div class="card-image-box">
+                <img src="images/anti-instagram.jpg" alt="The Anti-Instagram Movement">
+                <div class="badge badge-viral">VIRAL</div>
+            </div>
+            <div class="card-details">
+                <span class="category-tag tag-culture">CULTURE</span>
+                <h3 class="card-title">The Anti-Instagram Movement</h3>
+                <p class="card-description">Young creators are abandoning polished feeds for raw, authentic content that celebrates imperfection and real human connection.</p>
+                <div class="card-footer-meta">
+                    <span>👤 BY MIKE EDGE</span>
+                    <span>📅 JAN 4, 2025</span>
+                    <span>⏱️ 4 MIN READ</span>
+                    <span>❤️ 203</span>
+                </div>
+            </div>
+        </article>
+
+        <!-- زرار LOAD MORE ARTICLES -->
+        <div class="load-more-wrapper">
+            <button class="btn-load-more">+ LOAD MORE ARTICLES</button>
+        </div>
+    </section>
+
+    <!-- القائمة الجانبية Sticky -->
+    <aside class="articles-sidebar">
+        <div class="sidebar-sticky-content">
+            
+            <!-- Trending Now Box -->
+            <div class="sidebar-card-box">
+                <h3 class="sidebar-heading">TRENDING NOW</h3>
+                <ul class="trending-items-list">
+                    <li class="trending-single-item">
+                        <span class="trending-number num-1">01</span>
+                        <div class="trending-text-content">
+                            <a href="#" class="trending-item-title link-1">The Death of Minimalism</a>
+                            <span class="trending-item-meta">12.5K reads • 🔥 Trending</span>
+                        </div>
+                    </li>
+                    <li class="trending-single-item">
+                        <span class="trending-number num-2">02</span>
+                        <div class="trending-text-content">
+                            <a href="#" class="trending-item-title link-2">Chaos as a Design System</a>
+                            <span class="trending-item-meta">8.2K reads • 📈 Rising</span>
+                        </div>
+                    </li>
+                    <li class="trending-single-item">
+                        <span class="trending-number num-3">03</span>
+                        <div class="trending-text-content">
+                            <a href="#" class="trending-item-title link-3">Digital Rebellion</a>
+                            <span class="trending-item-meta">6.7K reads • 🔥 Hot</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Categories Box -->
+            <div class="sidebar-card-box">
+                <h3 class="sidebar-heading">CATEGORIES</h3>
+                <div class="categories-buttons-list">
+                    <a href="#" class="category-btn btn-cat-tech">TECH (24)</a>
+                    <a href="#" class="category-btn btn-cat-design">DESIGN (18)</a>
+                    <a href="#" class="category-btn btn-cat-culture">CULTURE (15)</a>
+                    <a href="#" class="category-btn btn-cat-opinion">OPINION (12)</a>
+                    <a href="#" class="category-btn btn-cat-tutorials">TUTORIALS (9)</a>
+                </div>
+            </div>
+
+        </div>
+    </aside>
+
+</main>
+    </div>
+
+
+
+
+
+    <!-- سكشن المؤلفين: MEET THE AUTHORS -->
+<section class="authors-section">
+    <div class="authors-header">
+        <h2>MEET THE AUTHORS</h2>
+        <p>The rebels behind the brutal truth</p>
+    </div>
+
+    <div class="authors-grid">
+        <!-- الكارت الأول: ألكس (أصفر مع هوفر أحمر) -->
+        <div class="author-card card-yellow">
+            <div class="author-badge founder">FOUNDER</div>
+            <div class="author-img-box">
+                <img src="images/avatar-1.jpg" alt="Alex Brutal">
+            </div>
+            <h3 class="author-name">ALEX BRUTAL</h3>
+            <p class="author-role">Tech Critic & Design Rebel</p>
+            <p class="author-desc">Destroying conventional wisdom one article at a time. 10+ years fighting the good fight against boring design and corporate BS.</p>
+            
+            <div class="social-icons">
+                <a href="#" class="social-icon twitter" aria-label="Twitter"><img src="images/twitter-brands-solid-full.png"></a>
+                <a href="#" class="social-icon linkedin" aria-label="LinkedIn"><img src="images/linkedin-brands-solid-full.png"></a>
+                <a href="#" class="social-icon instagram" aria-label="Instagram"><img src="images/instagram-brands-solid-full.png"></a>
+            </div>
+        </div>
+
+        <!-- الكارت الثاني: أرنولد (أخضر/سيان مع هوفر أزرق) -->
+        <div class="author-card card-cyan">
+            <div class="author-badge lead">LEAD</div>
+            <div class="author-img-box">
+                <img src="images/avatar-2.jpg" alt="Arnold Reeve">
+            </div>
+            <h3 class="author-name">Arnold Reeve</h3>
+            <p class="author-role">UX Anarchist & Visual Provocateur</p>
+            <p class="author-desc">Challenging design norms and creating chaos that actually works. Former corporate designer turned rebel with a cause.</p>
+            
+            <div class="social-icons">
+                <a href="#" class="social-icon twitter" aria-label="Twitter"><img src="images/twitter-brands-solid-full.png"></a>
+                <a href="#" class="social-icon linkedin" aria-label="LinkedIn"><img src="images/linkedin-brands-solid-full.png"></a>   
+                <a href="#" class="social-icon instagram" aria-label="Instagram"><img src="images/instagram-brands-solid-full.png"></a>
+            </div>
+        </div>
+
+        <!-- الكارت الثالث: مايك (وردي فاتح مع هوفر بنفسجي) -->
+        <div class="author-card card-pink">
+            <div class="author-badge viral">VIRAL</div>
+            <div class="author-img-box">
+                <img src="images/avatar-3.jpg" alt="Mike Edge">
+            </div>
+            <h3 class="author-name">MIKE EDGE</h3>
+            <p class="author-role">Cultural Critic & Trend Destroyer</p>
+            <p class="author-desc">Dissecting digital culture and exposing the truth behind viral trends. No filter, just facts that cut through the noise.</p>
+            
+            <div class="social-icons">
+                <a href="#" class="social-icon twitter" aria-label="Twitter"><img src="images/twitter-brands-solid-full.png"></a>
+                <a href="#" class="social-icon linkedin" aria-label="LinkedIn"><img src="images/linkedin-brands-solid-full.png"></a>
+                <a href="#" class="social-icon instagram" aria-label="Instagram"><img src="images/instagram-brands-solid-full.png"></a>
+        </div>
+    </div>
+</section>
+<!-- السكشن الثالث: JOIN THE REBELLION -->
+<section class="rebellion-section">
+    <div class="rebellion-header">
+        <h2>JOIN THE REBELLION</h2>
+        <p>Where rebels gather to change the digital world</p>
+    </div>
+
+    <div class="rebellion-container">
+        <!-- الجانب الأيسر: Become part of something bigger -->
+        <div class="rebellion-left">
+            <h3>BECOME PART OF SOMETHING BIGGER</h3>
+            <div class="feature-box">
+                <p>Join thousands of designers, developers, and digital rebels who are tired of the same old boring content. Our community is where raw ideas meet bold execution and real change happens.</p>
+            </div>
+
+            <!-- قائمة المميزات -->
+            <ul class="feature-list">
+                <li>
+                    <span class="check-icon red-bg"><img src="images/check-solid-full.png" alt="check"></span>
+                    Weekly brutal insights newsletter with exclusive content
+                </li>
+                <li>
+                    <span class="check-icon blue-bg"><img src="images/discord-brands-solid-full.png" alt="discord"></span>
+                    Exclusive community Discord access for real-time discussions
+                </li>
+                <li>
+                    <span class="check-icon purple-bg"><img src="images/star-solid-full-white.png" alt="star"></span>
+                    Early access to new articles before they go public
+                </li>
+                <li>
+                    <span class="check-icon green-bg"><img src="images/pen-solid-full.png" alt="pen"></span>
+                    Submit your own brutal takes and get featured
+                </li>
+            </ul>
+
+            <!-- زرار الانضمام مع تأثير الهوفر -->
+            <a href="#" class="join-btn">
+                <img src="images/rocket-solid-full.png" alt="rocket" class="btn-icon"> JOIN NOW - IT'S FREE
+            </a>
+        </div>
+
+        <!-- الجانب الأيمن: What rebels are saying -->
+        <div class="rebellion-right">
+            <div class="testimonials-wrapper">
+            <h3>WHAT REBELS ARE SAYING</h3>
+            
+            <!-- كارت التقييم الأول -->
+            <div class="testimonial-card">
+                <p>"Finally, a blog that tells it like it is. No corporate BS, just pure truth about what's really happening in tech. This is the wake-up call our industry needed."</p>
+                <div class="author-info">
+                    <img src="images/avatar-1.jpg" alt="Mark T.">
+                    <div>
+                        <h4>Mark T.</h4>
+                        <p>Senior Designer at Meta</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- كارت التقييم الثاني -->
+            <div class="testimonial-card">
+                <p>"The UX Review changed how I think about design. It's raw, honest, and exactly what our industry needs. Every article challenges my assumptions."</p>
+                <div class="author-info">
+                    <img src="images/avatar-2.jpg" alt="Alex M.">
+                    <div>
+                        <h4>Alex M.</h4>
+                        <p>Lead Developer at Stripe</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- كارت التقييم الثالث -->
+            <div class="testimonial-card">
+                <p>"The most authentic voice in digital culture. Every article challenges my assumptions and makes me think differently about the work I do."</p>
+                <div class="author-info">
+                    <img src="images/avatar-3.jpg" alt="James K.">
+                    <div>
+                        <h4>James K.</h4>
+                        <p>Creative Director at Adobe</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+<!-- السكشن الأخير: Footer -->
+<footer class="site-footer">
+    <div class="footer-container">
+        <!-- العمود الأول: اللوجو والوصف -->
+        <div class="footer-col brand-col">
+            <div class="footer-logo">
+                
+                <img src="images/pen-nib-solid-full.png">
+                <h2>THE UX REVIEW</h2>
+            </div>
+            <p>Raw, unfiltered thoughts on tech, design, and digital culture. No compromise, no corporate speak, just brutal truth that matters.</p>
+        </div>
+
+        <!-- العمود الثاني: التصنيفات (Categories) -->
+        <div class="footer-col links-col">
+            <h3>CATEGORIES</h3>
+            <ul>
+                <li><a href="#">TECH</a></li>
+                <li><a href="#">DESIGN</a></li>
+                <li><a href="#">CULTURE</a></li>
+                <li><a href="#">OPINION</a></li>
+                <li><a href="#">TUTORIALS</a></li>
+            </ul>
+        </div>
+
+        <!-- العمود الثالث: القائمة البريدية (Newsletter) -->
+        <div class="footer-col newsletter-col">
+            <h3>NEWSLETTER</h3>
+            <p>Get brutal insights delivered weekly. No spam, just truth that cuts through the noise.</p>
+            <form class="newsletter-form" onsubmit="event.preventDefault();">
+                <input type="email" placeholder="YOUR EMAIL ADDRESS" required class="email-input">
+                <button type="submit" class="subscribe-btn">SUBSCRIBE</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- الشريط السفلي للحقوق والروابط -->
+    <div class="footer-bottom">
+        <p class="copyright">&copy; 2025 The UX Review. ALL RIGHTS RESERVED. STAY BRUTAL.</p>
+        <div class="legal-links">
+            <a href="#">PRIVACY POLICY</a>
+            <a href="#">TERMS OF USE</a>
+            <a href="#">COOKIE POLICY</a>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
